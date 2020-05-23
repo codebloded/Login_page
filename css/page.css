@@ -1,0 +1,152 @@
+/* ===============Section=========== */
+/* --------css reset------ */
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-weight: bolder;
+    /* font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#container 
+{
+    background: url(../img/3271366.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.box
+{
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 2%;
+    width: 40%;
+
+    box-shadow: 11px 11px 14px 2px black;
+    margin: auto;
+    background-color: #000000c2;
+    padding: 13px 13px;
+    animation-name: slide-effect;
+    animation-duration: 2s;
+    animation-iteration-count: 1;    
+    
+}
+        @keyframes slide-effect {
+            from{
+                right: -300px;
+            
+    
+            }
+            to{
+                right:0px;
+                
+    
+            }
+            
+        }
+.box h2{
+    margin-bottom: 67px;
+    margin-top: 7px;
+    padding: 12px 12px;
+    font-size: 2.3rem;
+
+}
+form
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+}
+.btn{
+    padding: 9px 6px;
+    margin: 17px auto;
+    width: 60%;  
+     /* border:4px solid black; */
+     border: none;
+     border-radius: 3px;
+     font-size: 1.2rem;
+     filter: drop-shadow(8px 11px 9px black);
+     background-color: rgb(246, 122, 38);
+     transition: all;
+     transition-timing-function:0.2s;
+     transition-duration: 0.2s;
+}
+.btn:hover{
+    width: 75%;
+    padding: 14px 34px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+form input
+{ 
+    padding: 10px 8px ;
+    margin: 16px 6px;
+    font-size: 19px;
+    color: white;
+    border: none;
+    width: 87%;
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: 2px 3px 7px #ffffff91;
+    border: 2px solid whitesmoke;
+ 
+    
+}
+
+.morebtn{
+    /* border: 2px solid black; */
+    padding: 9px 6px;
+}
+.morebtn button{
+    padding: 13px 28px;
+    margin: 2px 19px;
+    /* border: 3px solid black; */
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    background-color: rgb(246, 122, 38);
+    filter: drop-shadow(8px 11px 9px black);
+    transition: all;
+    transition-timing-function:0.2s;
+    transition-duration: 0.2s;
+    
+
+}
+.morebtn button:hover
+{
+    padding: 18px 34px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.inpx i{
+    /* border: 2px solid black; */
+    margin: 2px;
+    padding: 5px;
+}
+
+.inpx{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4{
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
